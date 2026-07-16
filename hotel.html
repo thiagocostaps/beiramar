@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o Beira Mar Praia Hotel — estrutura completa, café da manhã incluso, piscinas e vista para o mar em Porto Seguro, Bahia.">
+  <title>O Hotel — Beira Mar Praia Hotel</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body { padding-top: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================
+       CABEÇALHO FIXO (idêntico em todas as páginas)
+       ============================================= -->
+  <header class="site-header" id="header">
+    <div class="header-grid">
+
+      <div class="header-logo">
+        <a href="index.html" class="logo" aria-label="Página inicial – Beira Mar Praia Hotel">
+          <img src="images/logo.png" alt="Beira Mar Praia Hotel">
+        </a>
+      </div>
+
+      <div class="header-right">
+
+        <div class="top-bar">
+          <div class="top-bar-phone"><i class="fas fa-phone-alt"></i> <span data-i18n="phone">Fone: 73 3018.4492</span></div>
+          <div class="top-bar-langs">
+            <a href="#" class="active" data-lang="pt"><img src="https://flagcdn.com/20x15/br.png" alt=""> Português</a>
+            <a href="#" data-lang="en"><img src="https://flagcdn.com/20x15/gb.png" alt=""> English</a>
+            <a href="#" data-lang="es"><img src="https://flagcdn.com/20x15/es.png" alt=""> Español</a>
+          </div>
+        </div>
+
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+          <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-menu">
+            <a href="#" class="btn-reserve" data-reserva data-i18n="nav_reserve">Reserve Já</a>
+            <div class="nav-links">
+              <a href="hotel.html" class="active" data-i18n="nav_hotel">O Hotel</a>
+              <a href="acomodacoes.html" data-i18n="nav_acomodacoes">Acomodações</a>
+              <a href="fotos.html" data-i18n="nav_fotos">Fotos</a>
+              <a href="contato.html" data-i18n="nav_contato">Contato</a>
+              <a href="localizacao.html" data-i18n="nav_localizacao">Localização</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="booking-bar">
+          <div class="booking-label" data-i18n-html="booking_label_html">RESERVA<br>ONLINE</div>
+          <div class="booking-form">
+            <div class="booking-row">
+              <div class="booking-field">
+                <label for="ci2" data-i18n="booking_checkin">Check-in</label>
+                <input type="date" id="ci2" class="booking-checkin">
+              </div>
+              <div class="booking-field">
+                <label for="co2" data-i18n="booking_checkout">Check-out</label>
+                <input type="date" id="co2" class="booking-checkout">
+              </div>
+            </div>
+            <div class="booking-row">
+              <div class="booking-field">
+                <label for="adu2" data-i18n="booking_adultos">Adultos</label>
+                <select id="adu2" class="booking-adults">
+                  <option>1</option><option selected>2</option>
+                  <option>3</option><option>4</option><option>5</option>
+                </select>
+              </div>
+              <div class="booking-field">
+                <label for="cri2" data-i18n="booking_criancas">Crianças</label>
+                <select id="cri2" class="booking-children">
+                  <option selected>0</option><option>1</option>
+                  <option>2</option><option>3</option>
+                </select>
+              </div>
+              <button class="btn-search" type="button" data-i18n="booking_pesquisar">Pesquisar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- /CABEÇALHO -->
+
+
+  <!-- =============================================
+       HERO DA PÁGINA
+       ============================================= -->
+  <section class="page-hero"
+           style="background-image:url('images/cabecalho/ohotel.jpg');background-size:cover;background-position:center">
+    <div class="page-hero-content">
+      <h1 data-i18n="nav_hotel">O Hotel</h1>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CHAMADA PRINCIPAL
+       ============================================= -->
+  <section class="section" style="background:var(--white);padding-bottom:2rem">
+    <div class="container" style="text-align:center">
+      <h2 style="font-size:2.2rem;font-weight:800;color:var(--gray);margin-bottom:.5rem" class="reveal" data-i18n="chamada_hotel_title">
+        Onde o oceano é o nosso quintal!
+      </h2>
+      <p style="color:var(--gold-vivid);font-size:1.05rem;font-weight:600" class="reveal" data-i18n="chamada_hotel_subtitle">
+        Você vai amar nosso hotel
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       GALERIA — CAROUSEL
+       ============================================= -->
+  <section class="gallery-section section" style="padding-top:1.5rem">
+    <div class="container">
+
+      <!-- Carousel principal -->
+      <div class="gallery-carousel reveal">
+        <div class="gallery-track">
+          <div class="gallery-item"><img src="images/ohotel/1.jpg" alt="Beira Mar Praia Hotel - foto 1" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/2.jpg" alt="Beira Mar Praia Hotel - foto 2" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/3.jpg" alt="Beira Mar Praia Hotel - foto 3" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/4.jpg" alt="Beira Mar Praia Hotel - foto 4" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/5.jpg" alt="Beira Mar Praia Hotel - foto 5" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/6.jpg" alt="Beira Mar Praia Hotel - foto 6" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/7.jpg" alt="Beira Mar Praia Hotel - foto 7" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/8.jpg" alt="Beira Mar Praia Hotel - foto 8" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/9.jpg" alt="Beira Mar Praia Hotel - foto 9" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/10.jpg" alt="Beira Mar Praia Hotel - foto 10" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/ohotel/11.jpg" alt="Beira Mar Praia Hotel - foto 11" loading="lazy"></div>
+        </div>
+
+        <button class="gal-btn prev" aria-label="Foto anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="gal-btn next" aria-label="Próxima foto">  <i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Dots -->
+      <div class="gal-dots">
+        <button class="gal-dot active"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+        <button class="gal-dot"></button>
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="gallery-thumbs">
+        <div class="gal-thumb active"><img src="images/ohotel/1.jpg" alt="Miniatura 1" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/2.jpg" alt="Miniatura 2" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/3.jpg" alt="Miniatura 3" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/4.jpg" alt="Miniatura 4" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/5.jpg" alt="Miniatura 5" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/6.jpg" alt="Miniatura 6" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/7.jpg" alt="Miniatura 7" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/8.jpg" alt="Miniatura 8" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/9.jpg" alt="Miniatura 9" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/10.jpg" alt="Miniatura 10" loading="lazy"></div>
+        <div class="gal-thumb"><img src="images/ohotel/11.jpg" alt="Miniatura 11" loading="lazy"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- /GALERIA -->
+
+
+  <!-- =============================================
+       DESCRIÇÃO DO HOTEL + INFORMAÇÕES
+       ============================================= -->
+  <section class="hotel-desc-section section">
+    <div class="container">
+      <div class="hotel-desc-grid">
+
+        <!-- Título -->
+        <div class="hotel-desc reveal">
+          <h2 data-i18n="sobre_title">O Beira Mar Praia Hotel vai surpreender você! Entre e sinta-se em casa.</h2>
+        </div>
+
+        <!-- Texto -->
+        <div class="hotel-desc reveal">
+          <p data-i18n="hotel_desc_text">
+            Combinando excelente estrutura e serviço, possuímos recepção 24hs, café da manhã incluso
+            em todas as diárias e serviço de quarto diariamente. As instalações são novas e confortáveis,
+            dispondo de piscinas (adulto e infantil), mini playground, sinuca, acesso à internet wi-fi
+            e estacionamento privativo.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ACOMODAÇÕES — preview
+       ============================================= -->
+  <section class="section" style="background:var(--light)">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="acomodacoes_section_title">ACOMODAÇÕES</h2>
+
+      <div class="acomodacoes-grid" style="margin-top:2.5rem">
+        <article class="acc-card reveal">
+          <div class="acc-img">
+            <img src="images/acomodacoes/2.jpg" alt="Suíte Luxo" loading="lazy">
+            <span class="acc-badge">Suíte Luxo</span>
+          </div>
+          <div class="acc-body">
+            <h3 data-i18n="acc1_name">Suíte Luxo</h3>
+            <p data-i18n="accH_desc">Cama Box, Frigobar, Ar Condicionado Split, TV Smart 32" e banheiro privativo.</p>
+            <div class="acc-tags">
+              <span class="acc-tag"><i class="fas fa-snowflake"></i><span data-i18n="tag_ar">Ar-condicionado</span></span>
+              <span class="acc-tag"><i class="fas fa-tv"></i><span data-i18n="tag_tvsmart">TV Smart</span></span>
+              <span class="acc-tag"><i class="fas fa-bath"></i><span data-i18n="tag_banheiro">Banheiro privativo</span></span>
+            </div>
+            <p style="font-size:.82rem;color:var(--gray);margin-bottom:.9rem" data-i18n="maisdetalhes">Mais detalhes →</p>
+            <div class="acc-actions">
+              <a href="acomodacoes.html" class="btn btn-primary" data-i18n="reservaragora">Reservar Agora</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p style="text-align:center;margin-top:2rem">
+        <a href="acomodacoes.html" class="btn btn-primary" data-i18n="conheca_acomodacoes">Conheça as Acomodações</a>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       RODAPÉ
+       ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_faleconosco">Fale Conosco</h4>
+          <address>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Av. Beira Mar, 5580 - Praia de Taperapuan<br>Porto Seguro - Bahia<br>CNPJ: 276783430001-66</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+557330184492">(73) 3018-4492</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/5573998400500" target="_blank" rel="noopener">(73) 99840-0500</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:reservas@beiramarpraiahotel.com.br">reservas@beiramarpraiahotel.com.br</a>
+            </div>
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_cartoes">Compre com os Cartões</h4>
+          <div class="pay-cards">
+            <div class="pay-card"><i class="fab fa-cc-visa"></i> Visa</div>
+            <div class="pay-card"><i class="fab fa-cc-mastercard"></i> Mastercard</div>
+            <div class="pay-card"><i class="fas fa-credit-card"></i> Elo</div>
+          </div>
+          <div class="pay-info">
+            <p><i class="fas fa-lock"></i> <span data-i18n="footer_seguro">Pagamento 100% seguro</span></p>
+            <p><i class="fas fa-shield-alt"></i> <span data-i18n="footer_protegidos">Dados protegidos</span></p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Beira Mar Praia Hotel</h4>
+          <p class="footer-desc" data-i18n="footer_desc">Localizado na deslumbrante Praia de Taperapuan, em Porto Seguro, Bahia. Onde o oceano é o nosso quintal!</p>
+          <p class="footer-hours"><i class="fas fa-clock"></i> <span data-i18n-html="footer_hours_html">Check-in: 14h &nbsp;|&nbsp; Check-out: 12h</span></p>
+          <div class="social-row">
+            <a href="https://www.instagram.com/beiramarpraiahotel/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100087785725975" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tripadvisor.com.br/Hotel_Review-g303270-d3629508-Reviews-Beira_Mar_Praia_Hotel-Porto_Seguro_State_of_Bahia.html" class="social-link" aria-label="TripAdvisor" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/tripadvisor/FFFFFF" alt="TripAdvisor"></a>
+            <a href="https://wa.me/5573998400500" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="footer-credit"><span data-i18n="footer_credit">Desenvolvido por</span> <a href="#">Thiago Costa</a></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer_rights">© 2026 Beira Mar Praia Hotel. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Botão WhatsApp -->
+  <div class="wa-float">
+    <a href="#" class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="wa-tip" data-i18n="wa_tip">Faça a sua cotação</div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
