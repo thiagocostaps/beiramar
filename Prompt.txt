@@ -1,0 +1,282 @@
+Esse é um caso perfeito para usar o Claude. O ideal é não pedir apenas para "copiar o site", mas sim descrever exatamente o comportamento esperado e deixar claro o que deve e não deve ser implementado.
+
+Segue um prompt bem completo.
+
+---
+
+# Prompt para o Claude
+
+Você é um desenvolvedor Front-end Sênior especialista em HTML5, CSS3, JavaScript ES6+, UX/UI e Design Responsivo.
+
+Quero reproduzir o layout de um site de hotel inspirado no modelo enviado nas imagens. O objetivo é apenas reproduzir a interface (UI), não o sistema de reservas.
+
+## Objetivo
+
+Construir um cabeçalho e um rodapé praticamente idênticos ao modelo apresentado, porém utilizando código moderno, limpo e organizado.
+
+O projeto deve ser desenvolvido utilizando apenas:
+
+* HTML5
+* CSS3
+* JavaScript puro
+
+Não utilizar Bootstrap, jQuery ou qualquer framework.
+
+---
+
+# Cabeçalho
+
+O topo da página deverá conter:
+
+### Logo
+
+Posicionada no canto esquerdo.
+
+### Menu
+
+Centralizado horizontalmente contendo os links:
+
+* O Hotel
+* Acomodações
+* Fotos
+* Contato
+* Localização
+
+O item ativo deve possuir uma linha inferior em destaque.
+
+### Botão
+
+Antes do menu deverá existir um botão:
+
+**Reserve Já**
+
+Com borda arredondada e cor de destaque.
+
+---
+
+# Banner
+
+Logo abaixo do menu deverá existir uma imagem ocupando toda a largura.
+
+Sobre esta imagem deverá existir uma caixa semitransparente.
+
+Essa caixa conterá:
+
+## Título
+
+RESERVA ONLINE
+
+## Campos
+
+Check-in
+
+Campo do tipo Date.
+
+Check-out
+
+Campo do tipo Date.
+
+Adultos
+
+Select.
+
+Valores:
+
+1 até 10
+
+Crianças
+
+Select.
+
+Valores:
+
+0 até 10
+
+Botão
+
+Pesquisar
+
+---
+
+# Importante
+
+O botão **Pesquisar NÃO realizará reservas.**
+
+Ao clicar deverá apenas executar uma destas opções (escolha a melhor):
+
+Opção 1
+
+Abrir uma página fictícia chamada:
+
+```
+reservas.html
+```
+
+ou
+
+Opção 2
+
+Exibir um alert:
+
+```
+Sistema de reservas em desenvolvimento.
+```
+
+Não implementar integração com nenhum motor de reservas.
+
+---
+
+# Rodapé
+
+Criar um rodapé semelhante ao modelo.
+
+Dividido em três colunas.
+
+## Coluna 1
+
+Endereço
+
+Telefone
+
+Email
+
+## Coluna 2
+
+Ícones de cartões
+
+(Visa, MasterCard, Elo etc.)
+
+Podem ser utilizados ícones do Font Awesome.
+
+## Coluna 3
+
+Texto
+
+Desenvolvido por
+
+com um pequeno link.
+
+---
+
+# WhatsApp
+
+No canto inferior direito deverá existir um botão flutuante de WhatsApp.
+
+O botão deve:
+
+* permanecer fixo durante a rolagem;
+* possuir animação suave ao passar o mouse;
+* abrir uma conversa utilizando o seguinte formato:
+
+```
+https://wa.me/55XXXXXXXXXXX
+```
+
+Deixe o número como variável para futura alteração.
+
+---
+
+# Responsividade
+
+O layout deverá funcionar perfeitamente em:
+
+* Desktop
+* Notebook
+* Tablet
+* Smartphone
+
+No celular:
+
+* menu vira hambúrguer;
+* formulário reorganiza os campos;
+* botão continua grande;
+* WhatsApp permanece fixo.
+
+---
+
+# Organização do código
+
+Separar em:
+
+```
+index.html
+
+css/
+    style.css
+
+js/
+    script.js
+
+images/
+```
+
+Todo o código deverá ser comentado.
+
+---
+
+# Estilo
+
+Utilizar aparência moderna.
+
+Características:
+
+* tons dourados
+* branco
+* cinza escuro
+* sombras suaves
+* transparências elegantes
+* cantos arredondados
+* animações discretas
+* efeito hover nos menus
+* efeito hover nos botões
+
+---
+
+# Qualidade
+
+O código deve seguir boas práticas:
+
+* HTML semântico
+* CSS organizado por seções
+* JavaScript modular
+* Fácil manutenção
+* Fácil personalização
+
+---
+
+# Não implementar
+
+Não criar:
+
+* login
+* painel administrativo
+* banco de dados
+* sistema de reservas
+* integração com Booking
+* integração com Omnibees
+* integração com HSystem
+* integração com motores de reserva
+
+O objetivo é apenas reproduzir o layout.
+
+---
+
+# Resultado esperado
+
+O resultado deve ser visualmente muito próximo ao site apresentado nas imagens, porém com código moderno, limpo, responsivo e preparado para futuras expansões.
+
+---
+
+### Uma sugestão para deixar o prompt ainda melhor
+
+Se você pretende recriar o site inteiro (e não apenas o cabeçalho e rodapé), eu faria o projeto em etapas. Assim o Claude tende a produzir um código muito mais organizado e com menos erros.
+
+A sequência seria:
+
+1. **Prompt 1:** Criar apenas a estrutura base (HTML, CSS e JavaScript).
+2. **Prompt 2:** Desenvolver somente o cabeçalho e a barra de reservas.
+3. **Prompt 3:** Criar o banner principal e as seções de conteúdo.
+4. **Prompt 4:** Desenvolver o rodapé e o botão flutuante do WhatsApp.
+5. **Prompt 5:** Refinar o design, adicionar animações e garantir a responsividade completa.
+
+Essa abordagem costuma gerar resultados melhores do que solicitar o site completo em um único prompt.
