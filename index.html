@@ -60,6 +60,11 @@
             <span></span><span></span><span></span>
           </button>
 
+          <!-- Ícone de reserva (mobile) -->
+          <button class="reserve-toggle" aria-label="Abrir reserva online" aria-expanded="false">
+            <i class="fas fa-book"></i>
+          </button>
+
           <!-- Menu -->
           <div class="nav-menu">
             <a href="#" class="btn-reserve" data-reserva data-i18n="nav_reserve">Reserve Já</a>
@@ -238,7 +243,7 @@
             </div>
             <div class="acc-actions">
               <a href="acomodacoes.html" class="btn btn-primary" data-i18n="acc_verdetalhes">Ver Detalhes</a>
-              <button class="btn btn-outline" onclick="showToast('⚠️ Sistema de reservas em desenvolvimento!')" data-i18n="acc_reservar">Reservar</button>
+              <button class="btn btn-outline" data-reserva data-i18n="acc_reservar">Reservar</button>
             </div>
           </div>
         </article>
