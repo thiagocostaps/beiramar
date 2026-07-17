@@ -214,7 +214,7 @@ function applyI18n(lang) {
     if (template) el.textContent = template.replace('{n}', n);
   });
 
-  document.querySelectorAll('.top-bar-langs a').forEach(a => {
+  document.querySelectorAll('a[data-lang]').forEach(a => {
     a.classList.toggle('active', a.dataset.lang === lang);
   });
 
@@ -227,7 +227,7 @@ function initI18n() {
   document.querySelectorAll('[data-i18n-html]').forEach(el => { el.dataset.i18nOrig = el.innerHTML; });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { el.dataset.i18nOrig = el.getAttribute('placeholder'); });
 
-  document.querySelectorAll('.top-bar-langs a[data-lang]').forEach(a => {
+  document.querySelectorAll('a[data-lang]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
       applyI18n(a.dataset.lang);

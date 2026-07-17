@@ -214,6 +214,9 @@ address { font-style: normal; }
 .nav-links a:hover, .nav-links a.active { color: var(--gold); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
+/* Idiomas dentro do menu mobile (a barra do topo já cobre isso no desktop) */
+.nav-langs { display: none; }
+
 /* Hamburguer */
 .hamburger {
   display: none;
@@ -1011,6 +1014,11 @@ address { font-style: normal; }
   .btn-reserve { width: 100%; text-align: center; padding: .7rem; }
   .nav-links { flex-direction: column; width: 100%; gap: 0; }
   .nav-links a { padding: .65rem 0; border-bottom: 1px solid var(--light); width: 100%; color: var(--dark-3); text-shadow: none; }
+
+  .nav-langs { display: flex; justify-content: center; gap: 1.25rem; width: 100%; padding-top: 1rem; }
+  .nav-langs a { display: flex; align-items: center; gap: .4rem; color: var(--dark-3); font-size: .82rem; transition: var(--ease); }
+  .nav-langs a img { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.15); }
+  .nav-langs a:hover, .nav-langs a.active { color: var(--gold); }
 
   .booking-bar {
     position: fixed;
