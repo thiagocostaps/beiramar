@@ -74,7 +74,8 @@ const I18N = {
 
     chamada_hotel_title: 'Where the ocean is our backyard!',
     chamada_hotel_subtitle: "You'll love our hotel",
-    hotel_desc_text: 'Combining excellent facilities and service, we offer 24-hour reception, breakfast included every day, and daily room service. The facilities are new and comfortable, featuring pools (adult and children\'s), a mini playground, a pool table, wi-fi internet access, and private parking.',
+    hotel_desc_text: 'Combining excellent facilities and service, we offer 24-hour reception, breakfast included every day, and the option to add half-board (lunch or dinner) to your stay — for more information, contact our WhatsApp service.',
+    hotel_desc_text2: 'The facilities are new and comfortable, featuring pools (adult and children\'s, with water toys), a mini playground, a pool table, wi-fi internet access, private parking, and an electric car charger.',
     acomodacoes_section_title: 'ACCOMMODATIONS',
     accH_desc: 'Queen box bed, mini fridge, split air conditioning, 32" Smart TV, and private bathroom.',
     tag_banheiro: 'Private bathroom',
@@ -151,7 +152,8 @@ const I18N = {
 
     chamada_hotel_title: '¡Donde el océano es nuestro patio trasero!',
     chamada_hotel_subtitle: 'Te va a encantar nuestro hotel',
-    hotel_desc_text: 'Combinando excelente estructura y servicio, contamos con recepción las 24 horas, desayuno incluido todos los días y servicio a la habitación diario. Las instalaciones son nuevas y cómodas, con piscinas (para adultos y niños), mini parque infantil, mesa de billar, acceso a internet wi-fi y estacionamiento privado.',
+    hotel_desc_text: 'Combinando excelente estructura y servicio, contamos con recepción las 24 horas, desayuno incluido todos los días y la opción de agregar media pensión (almuerzo o cena) a su estadía — más información a través de nuestra central de atención por WhatsApp.',
+    hotel_desc_text2: 'Las instalaciones son nuevas y cómodas, con piscinas (para adultos y niños, con juguetes acuáticos), mini parque infantil, mesa de billar, acceso a internet wi-fi, estacionamiento privado y cargador para auto eléctrico.',
     acomodacoes_section_title: 'ALOJAMIENTOS',
     accH_desc: 'Cama Box, frigobar, aire acondicionado split, TV Smart de 32" y baño privado.',
     tag_banheiro: 'Baño privado',
